@@ -17,7 +17,7 @@ func main(){
 	for i :=0;i<len(fileArr);i++{
 		params := slack.FileUploadParameters{
 			Channels:channelArr,
-			File:fileArr[i]
+			File:fileArr[i],
 
 		}
 		file,err:=api.UploadFile(params)
